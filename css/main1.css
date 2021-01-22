@@ -1,0 +1,115 @@
+/*  regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+/* REGOLE HEADER (LOGO + TITOLO + BUTTON) */
+header {
+  position: fixed;
+  min-width: 350px;
+  height: 60px;
+  min-height: 50px;
+  width: 100vw;
+  background-color: black;
+  border-bottom: solid 2px grey;
+  text-align: center;
+  display: inline-block;
+  z-index: 999;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+h1 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black, 0px -2px 0 black, 3px 3px 3px #8B8B8B;
+}
+
+header > div {
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+button {
+  font-size: 9px;
+  color: white;
+  background-color: black;
+  padding: 3px;
+  border: solid 1px white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* REGOLE MAIN (BLOCCHI) */
+main {
+  position: relative;
+  color: white;
+  padding-top: 55px;
+}
+
+main > div {
+  position: relative;
+
+}
+
+div > img {
+  width: 100vw;
+  min-width: 350px;
+  border: solid black 30px;
+  border-radius: 75px;
+  display: block;
+  margin: auto;
+  opacity: 0.5;
+}
+
+div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15vw;
+  text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black, 0px -2px 0 black, 3px 3px 3px #8B8B8B;
+  display: none;
+}
+
+
+
+/* REGOLE BLOCCO :hover */
+div:hover > div {
+  display: block;
+}
+
+div:hover > img {
+  opacity: 1;
+}
+
+
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  min-height: 50px;
+  background-color: black;
+  border-top: solid 2px grey;
+}

@@ -1,5 +1,6 @@
 .image {
-  width: 100vw; height: 100vh;
+  width: 100vw;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -20,30 +21,31 @@
 }
 
 .image:hover .text, .image:hover .layover {
-  display: block;}
+  display: block;
+}
 
 #taranto {
-  background-image: url('taranto.jpg');
+  background-image: url('../img/taranto.jpg');
 }
 
 #como {
-  background-image: url('como.jpg');
+  background-image: url('../img/como.jpg');
 }
 
 #milano {
-  background-image: url('milano.jpg');
+  background-image: url('../img/milano.jpg');
 }
 
 #pordenone {
-  background-image: url('pordenone.jpg');
+  background-image: url('../img/pordenone.jpg');
 }
 
 #firenze {
-  background-image: url('firenze.jpg');
+  background-image: url('../img/firenze.jpg');
 }
 
 #pesaro {
-  background-image: url('pesaro.jpg');
+  background-image: url('../img/pesaro.jpg');
 }
 
-#honolulu {background-image: url('honolulu.jpg');}
+#honolulu {background-image: url('../img/honolulu.jpg');}
