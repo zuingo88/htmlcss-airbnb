@@ -33,13 +33,25 @@ header img {
   left: 5px;
 }
 
+header img:hover {
+  width: 55px;
+  height: 55px;
+  top: 2.5px;
+  left: 2.5px;
+}
+
 h1 {
+  font-size: 30px;
   color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black, 0px -2px 0 black, 3px 3px 3px #8B8B8B;
+}
+
+h1:hover {
+  font-size: 35px;
 }
 
 header > div {
@@ -56,9 +68,15 @@ button {
   color: white;
   background-color: black;
   padding: 3px;
-  border: solid 1px white;
-  border-radius: 10px;
+  border: solid 2px white;
+  border-radius: 5px 10px 10px 10px;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  padding: 5px;
 }
 
 /* REGOLE MAIN (BLOCCHI) */
@@ -113,4 +131,8 @@ footer {
   min-height: 50px;
   background-color: black;
   border-top: solid 2px grey;
+  color: white;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
 }
