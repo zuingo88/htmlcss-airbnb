@@ -1,4 +1,4 @@
-/*  regole generali */
+/*  REGOLE GENERALI */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   background-color: black;
 }
 
-/* REGOLE HEADER (LOGO + TITOLO + BUTTON) */
+/* REGOLE HEADER (LOGO + TITOLO + BUTTON E RELATIVI STATI :HOVER) */
 header {
   position: fixed;
   min-width: 350px;
@@ -19,7 +19,7 @@ header {
   min-height: 50px;
   width: 100vw;
   background-color: black;
-  border-bottom: solid 2px grey;
+  border-bottom: solid 3px grey;
   text-align: center;
   display: inline-block;
   z-index: 999;
@@ -76,7 +76,6 @@ button {
 button:hover {
   background-color: white;
   color: black;
-  padding: 5px;
 }
 
 /* REGOLE MAIN (BLOCCHI) */
@@ -94,12 +93,11 @@ main > div {
 div > img {
   width: 100vw;
   min-width: 350px;
-  /* height: calc(100vh - 50px) */
-  border: solid black 30px;
+  border: solid white 3px;
   border-radius: 75px;
   display: block;
-  margin: auto;
-  opacity: 0.5;
+  margin: 40px auto;
+  opacity: 0.3;
 }
 
 div > div {
@@ -124,15 +122,23 @@ div:hover > img {
 }
 
 
-
+/* REGOLE FOOTER */
 footer {
   width: 100vw;
   height: 10vh;
   min-height: 50px;
   background-color: black;
-  border-top: solid 2px grey;
+  border-top: solid 3px grey;
   color: white;
   font-size: 12px;
   font-style: italic;
   text-align: center;
+  position: relative;
+}
+
+footer > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
