@@ -14,10 +14,9 @@ body {
 /* REGOLE HEADER (LOGO + TITOLO + BUTTON E RELATIVI STATI :HOVER) */
 header {
   position: fixed;
+  width: 100vw;
   min-width: 350px;
   height: 60px;
-  min-height: 50px;
-  width: 100vw;
   background-color: black;
   border-bottom: solid 3px grey;
   text-align: center;
@@ -98,7 +97,7 @@ div > img {
   display: block;
   margin: 40px auto;
   opacity: 0.3;
-}
+  }
 
 
 div > div:first-of-type {
@@ -124,7 +123,7 @@ div > div:last-of-type {
   border: 2px solid grey;
   border-radius: 50px;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.7;
   padding-top: 15px;
   text-align: center;
   display: none;
@@ -137,7 +136,7 @@ main li {
   vertical-align: middle;
 }
 
-ul button {
+main button {
   display: block;
   position: absolute;
   bottom: 10%;
@@ -145,7 +144,7 @@ ul button {
   transform: translateX(-50%);
 }
 
-div > div:last-of-type, ul button, select > option {
+div > div:last-of-type, main button, select > option {
   font-size: min(max(8px, 1.7vw), 20px);
 }
 
@@ -167,7 +166,6 @@ footer {
   width: 100vw;
   height: 60px;
   min-width: 350px;
-  min-height: 50px;
   background-color: black;
   border-top: solid 3px grey;
   color: white;
