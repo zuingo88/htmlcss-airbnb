@@ -87,7 +87,6 @@ main {
 
 main > div {
   position: relative;
-
 }
 
 div > img {
@@ -100,7 +99,7 @@ div > img {
   opacity: 0.3;
 }
 
-div > div {
+div > div:first-of-type {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -110,16 +109,54 @@ div > div {
   display: none;
 }
 
+div > div:last-of-type {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 100px;
+  max-width: 780px;
+  min-width: 305px;
+  border: 2px solid grey;
+  border-radius: 50px;
+  background-color: black;
+  opacity: 0.5;
+  padding-top: 15px;
+  text-align: center;
+  display: none;
+}
+
+main li {
+  list-style-type: none;
+  display: inline-block;
+  line-height: 100%;
+  vertical-align: middle;
+}
+
+ul button {
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div > div:last-of-type, ul button, select > option {
+  font-size: min(max(8px, 1.7vw), 20px);
+}
 
 
 /* REGOLE BLOCCO :hover */
-div:hover > div {
+div:hover > div, div:hover > div:first-of-type {
   display: block;
 }
 
 div:hover > img {
   opacity: 1;
 }
+
+
 
 
 /* REGOLE FOOTER */
