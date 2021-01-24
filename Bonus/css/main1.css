@@ -54,6 +54,7 @@ h1:hover {
   font-size: 35px;
 }
 
+/* REGOLE DIV BUTTON */
 header > div {
   height: auto;
   width: auto;
@@ -78,7 +79,7 @@ button:hover {
   color: black;
 }
 
-/* REGOLE MAIN (BLOCCHI) */
+/* REGOLE MAIN (BLOCCHI CITTA') */
 main {
   position: relative;
   color: white;
@@ -99,6 +100,7 @@ div > img {
   opacity: 0.3;
 }
 
+
 div > div:first-of-type {
   position: absolute;
   top: 50%;
@@ -109,6 +111,7 @@ div > div:first-of-type {
   display: none;
 }
 
+/* REGOLE FORM */
 div > div:last-of-type {
   position: absolute;
   bottom: 10px;
@@ -162,7 +165,8 @@ div:hover > img {
 /* REGOLE FOOTER */
 footer {
   width: 100vw;
-  height: 10vh;
+  height: 60px;
+  min-width: 350px;
   min-height: 50px;
   background-color: black;
   border-top: solid 3px grey;
@@ -173,9 +177,44 @@ footer {
   position: relative;
 }
 
-footer > div {
+footer > div, footer > nav {
   position: absolute;
+}
+
+footer > nav {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  line-height: 100%;
+  vertical-align: bottom;
+}
+
+nav li:first-of-type {
+  margin-right: 20px;
+}
+
+/* LINK INTERNO */
+nav a:first-of-type {
+  font-size: 50px;
+  font-style: normal;
+  text-decoration: none;
+  color: white;
+}
+
+/* LINK ESTERNI */
+footer img {
+  width: 40px;
+  height: 40px;
+}
+
+/* PAGINA DI */
+footer > div {
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 10%;
+  transform: translateY(-50%);
 }
